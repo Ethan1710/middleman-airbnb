@@ -1,15 +1,186 @@
 ---
 title: Le Wagon - Middleman
 ---
-
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/berlin');">
+  <div class="banner-content">
+    <h1 class="text-center">welcome home</h1>
+    <p>Book unique homes and experience a city like a local.</p>
+    <form class="form-inline">
+      <input class="form-control input-lg" type="email" id="your-email" placeholder="Where">
+      <input class="form-control input-lg" type="password" id="Your-password" placeholder="When">
+      <select id="referrer" class="form-control input-lg">
+        <option value="">1 Guest</option>
+        <option value="">2 Guests</option>
+        <option value="">3 Guests</option>
+      </select>
+      <button type="submit" class="btn btn-primary btn-lg">Search</button>
+    </form>
   </div>
 </div>
+
+
+
+<div class="container text-center">
+  <h1>Recent flats</h1>
+  <div class="row">
+    <div class="col-xs-12 col-lg-4">
+      <div class="card">
+        <div class="card image" style="background-image: url(<%= image_path 'Paris.jpeg'%>)">
+<img src='https://kitt.lewagon.com/placeholder/users/ssaunier' class="avatar"/>
+
+          <div class="area">
+            <h3>Paris, France</h3>
+          </div>
+          <div class="description">
+            <h4>Sebastien's home</h4>
+            <p>Charming room in montmartre</p>
+            <p><i class="fa fa-star" style="color: orange"></i>
+                     <i class="fa fa-star" style="color: orange"></i>
+                     <i class="fa fa-star" style="color: orange"></i>
+                     <i class="fa fa-star" style="color: orange"></i>
+                     <i class="fa fa-star" style="color: white"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-lg-4">
+     <div class="card">
+      <div class="card image" style="background-image: url(<%= image_path 'Tokyo.jpg'%>)">
+        <img src='https://kitt.lewagon.com/placeholder/users/alex-felix' class="avatar"/>
+
+      <div class="area">
+        <h3>Tokyo, Japan</h3>
+      </div>
+      <div class="description">
+        <h4>Boris' home</h4>
+        <p>Small flat in Tokyo</p>
+        <p><i class="fa fa-star" style="color: orange"></i>
+                 <i class="fa fa-star" style="color: orange"></i>
+                 <i class="fa fa-star" style="color: orange"></i>
+                 <i class="fa fa-star" style="color: orange"></i>
+                 <i class="fa fa-star" style="color: white"></i></p>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="col-xs-12 col-lg-4">
+    <div class="card">
+       <div class="card image" style="background-image: url(<%= image_path 'London.jpg'%>)">
+        <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="avatar"/>
+
+      <div class="area">
+        <h3>London, UK</h3>
+      </div>
+      <div class="description">
+        <h4>Romain's home</h4>
+        <p>Nice flat in Piccadilly</p>
+        <p><i class="fa fa-star" style="color: orange"></i>
+          <i class="fa fa-star" style="color: orange"></i>
+          <i class="fa fa-star" style="color: orange"></i>
+          <i class="fa fa-star" style="color: orange"></i>
+          <i class="fa fa-star" style="color: white"></i></p>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+ABOVE - THIS IS WITH A BOOSTRAP GRID
+UNDERNEATH - THIS IS WITH THE FLEXBOX!!!
+
+
+<div class="container text-center">
+  <h1>Recent flats</h1>
+  <div class="cards">
+    <div class="card">
+      <div class="card image" style="background-image: url(<%= image_path 'Paris.jpeg'%>)">
+      <div class="area">
+        Paris, France
+      </div>
+      <div class="description">
+        <h2>Sebastien's home</h2>
+        <p>Charming room in montmartre</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <%= image_tag "Tokyo.jpg", class: "image", id: "Tokyo" %>
+      <div class="area">
+        Tokyo, Japan
+      </div>
+      <div class="description">
+        <h2>Boris' home</h2>
+        <p>Small flat in Tokyo</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <%= image_tag "London.jpg", class: "image", id: "London" %>
+      <div class="area">
+        London, UK
+      </div>
+      <div class="description">
+        <h2>Romain's home</h2>
+        <p>Nice flat in Piccadilly</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+  <!-- <div class="row">
+    <div class="col-lg-4">
+      <div class="card" style="background-image: url('images/Paris.jpeg');">
+
+      <div class="area">
+        Paris, France
+      </div>
+      <div class="description">
+        <h2>Sebastien's home</h2>
+        <p>Charming room in montmartre</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+       <div class="card" style="background-image: url('images/Tokyo.jpg');">
+
+      <div class="area">
+        Tokyo, Japan
+      </div>
+      <div class="description">
+        <h2>Boris' home</h2>
+        <p>Small flat in Tokyo</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+       <div class="card" style="background-image: url('images/London.jpg');">
+      <div class="area">
+        London, UK
+      </div>
+      <div class="description">
+        <h2>Romain's home</h2>
+        <p>Nice flat in Piccadilly</p>
+      </div>
+      </div>
+    </div>
+
+
+  </div>
+
+ -->
+
+
+
+
+
+
+
+

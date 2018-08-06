@@ -1,0 +1,37 @@
+.banner {
+  height: 580px;
+}
+
+.banner-content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.banner-content > h1 {
+  color: white;
+  margin: 0;
+}
+
+.banner-content > p {
+  color: #D4D4D1;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 25px;
+}
+
+.btn.btn-primary {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
